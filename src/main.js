@@ -1,13 +1,15 @@
 import { createApp } from 'vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faTaxi, faUser, faClock, faCreditCard, faStar, faLocationDot, faBriefcase, faMobile, faGift, faShield, faHeadset, faRoute, faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faAppStore, faGooglePlay } from '@fortawesome/free-brands-svg-icons'
-import App from './App.vue'
 import './assets/main.css'
+import App from './App.vue'
 
-//  FontAwesome icons
-library.add(
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* import specific icons */
+import { 
   faTaxi, 
   faUser, 
   faClock, 
@@ -21,8 +23,38 @@ library.add(
   faHeadset, 
   faRoute,
   faChevronDown,
+} from '@fortawesome/free-solid-svg-icons'
+
+import { 
   faAppStore, 
-  faGooglePlay
+  faGooglePlay,
+  faInstagram,
+  faLinkedin,
+  faFacebook,
+  faXTwitter
+} from '@fortawesome/free-brands-svg-icons'
+
+/* add icons to the library */
+library.add(
+  faTaxi, 
+  faUser, 
+  faClock, 
+  faCreditCard, 
+  faStar, 
+  faLocationDot, 
+  faBriefcase, 
+  faMobile, 
+  faGift, 
+  faShield, 
+  faHeadset,
+  faRoute,
+  faChevronDown,
+  faAppStore, 
+  faGooglePlay,
+  faInstagram,
+  faLinkedin,
+  faFacebook,
+  faXTwitter
 )
 
 const app = createApp(App)

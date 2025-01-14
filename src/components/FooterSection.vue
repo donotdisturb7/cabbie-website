@@ -33,10 +33,13 @@
               <font-awesome-icon :icon="['fab', 'facebook']" size="lg" />
             </a>
             <a href="#" class="text-gray-400 hover:text-white transition-colors">
-              <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
+              <font-awesome-icon :icon="['fab', 'x-twitter']" size="lg" />
             </a>
             <a href="#" class="text-gray-400 hover:text-white transition-colors">
               <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
             </a>
           </div>
         </div>
