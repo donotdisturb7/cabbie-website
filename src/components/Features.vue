@@ -1,7 +1,7 @@
 <template>
   <section id="features" class="features section">
     <div class="container">
-      <h2 class="text-center">Pourquoi choisir Cabbie ?</h2>
+      <h2 class="text-center text-4xl">Pourquoi choisir Cabbie ?</h2>
       <div class="features-grid">
         <div class="feature-card">
           <font-awesome-icon :icon="['fas', 'clock']" />

@@ -1,7 +1,7 @@
 <template>
   <section id="drivers" class="drivers section">
     <div class="container">
-      <h2 class="text-center">Avantages pour les Chauffeurs</h2>
+      <h2 class="text-center text-4xl">Avantages pour les Chauffeurs</h2>
       <div class="features-grid">
         <div class="feature-card">
           <font-awesome-icon :icon="['fas', 'briefcase']" />

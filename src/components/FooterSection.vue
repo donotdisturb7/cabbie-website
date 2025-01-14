@@ -35,7 +35,7 @@
             <a href="#" class="text-gray-400 hover:text-white transition-colors">
               <font-awesome-icon :icon="['fab', 'x-twitter']" size="lg" />
             </a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/cab.admin/" class="text-gray-400 hover:text-white transition-colors" target="_blank">
               <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
             </a>
             <a href="#" class="text-gray-400 hover:text-white transition-colors">
