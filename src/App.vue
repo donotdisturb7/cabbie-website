@@ -1,16 +1,3 @@
-<template>
-  <div class="min-h-screen bg-white">
-    <NavBar />
-    <main>
-      <HeroSection />
-      <Features />
-      <Drivers />
-      <DownloadSection />
-    </main>
-    <FooterSection />
-  </div>
-</template>
-
 <script setup>
 import { ref, onMounted } from 'vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -26,6 +13,19 @@ import FooterSection from './components/FooterSection.vue'
 
 library.add(faTaxi, faUser, faClock, faCreditCard, faStar, faLocationDot, faBriefcase, faMobile, faGift, faShield, faHeadset, faRoute, faAppStore, faGooglePlay)
 </script>
+
+<template>
+  <div class="app">
+    <NavBar />
+    <main>
+      <HeroSection />
+      <Features />
+      <Drivers />
+      <DownloadSection />
+    </main>
+    <FooterSection />
+  </div>
+</template>
 
 <style>
 @import './assets/main.css';
