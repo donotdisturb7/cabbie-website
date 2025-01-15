@@ -1,8 +1,8 @@
 <template>
   <nav :class="['fixed top-8 left-1/2 -translate-x-1/2 flex items-center gap-16 z-50 px-8 py-2 transition-all duration-300',
     isScrolled ? 'opacity-0 -translate-y-full' : 'opacity-100']">
-    <div class="h-10">
-      <img src="@/assets/Logo.png" alt="Cabbie Logo" class="h-full w-auto" />
+    <div class="h-12"> 
+      <a href="#"><img src="@/assets/Logo.png" alt="Cabbie Logo" class="h-full w-auto" /></a>
     </div>
     <div class="flex items-center gap-8">
       <a href="#" class="text-text font-medium hover:text-primary transition-colors active">Accueil</a>
