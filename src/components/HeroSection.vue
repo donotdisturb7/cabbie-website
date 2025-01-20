@@ -66,9 +66,15 @@
       class="absolute bottom-8 left-1/2 -translate-x-1/2 group focus:outline-none"
       aria-label="Défiler vers le bas"
     >
-      <div
-        class="w-8 h-8 border-b-3 border-r-3 border-text/80 rotate-45 transform group-hover:border-text transition-colors animate-bounce"
-      ></div>
+      <svg
+        class="w-8 h-8 text-text/80 group-hover:text-text transition-colors animate-bounce"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
     </button>
   </section>
 </template>
@@ -94,17 +100,11 @@ const showGooglePlayQR = () => {
   googlePlayQR.value.showQR(GOOGLE_PLAY_URL);
 };
 
-// Fonction pour faire défiler vers la section suivante
 const scrollToNext = () => {
-  const nextSection = document.querySelector("section:nth-of-type(2)");
-  if (nextSection) {
-    nextSection.scrollIntoView({ behavior: "smooth" });
-  } else {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  }
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
 };
 </script>
 
@@ -138,24 +138,4 @@ const scrollToNext = () => {
   }
 }
 
-/* Animation de rebond pour la flèche */
-.animate-bounce {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0) rotate(45deg);
-  }
-  40% {
-    transform: translateY(-10px) rotate(45deg);
-  }
-  60% {
-    transform: translateY(-5px) rotate(45deg);
-  }
-}
 </style>
